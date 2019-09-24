@@ -11,8 +11,13 @@
     <title>{{ page.title }}</title>
   </head>
   <body>
-    {{ content }}
-
+    <div class="container">
+      {% include navbar.html %}
+    </div>
+    <br>
+    <div class="container">
+      {{ content }}
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
